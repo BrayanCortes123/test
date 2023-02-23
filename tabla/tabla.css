@@ -1,0 +1,31 @@
+body{
+    background-image: url(../imagenes/img/pc.jpg);
+    background-size: contain;
+}
+.table-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+td {
+    border: 1.5px solid black;
+    padding: 10px 12px;
+    
+}
+table {
+    border-collapse: collapse;
+}
+h1 {
+    color: black;
+    text-align: center;
+}
+td {
+    background-color: beige;
+    text-align: center;
+}
+img{
+    width: 20%;
+    height: 20%;
+    align-items: center;
+    text-align: center;
+}

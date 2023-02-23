@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+@font-face {
+    font-family: got;
+    src: url(fuente/got.ttf);
+}
+h1{
+    font-family: 'got';
+    font-size: 5em;
+    color: brown;
+    text-align: center;
+    display: block;
+
+    }

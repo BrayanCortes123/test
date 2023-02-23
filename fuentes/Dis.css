@@ -1,0 +1,18 @@
+body{
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}  
+@font-face {
+    font-family: disney;
+    src: url(fuente/disney.ttf);
+}  
+h1{
+    font-family: 'disney';
+    font-size: 5em;
+    color: rgb(44, 140, 219);
+    text-align: center;
+}

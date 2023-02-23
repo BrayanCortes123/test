@@ -1,0 +1,22 @@
+body{
+    background-color: gainsboro;
+}
+u{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+.center{
+    text-align: center;
+}
+.justify{
+    text-align: justify;
+}

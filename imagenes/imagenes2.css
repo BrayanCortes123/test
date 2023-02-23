@@ -1,0 +1,26 @@
+body{
+    background-color: beige;
+}
+.box-img{
+    display: inline-block;
+    width: 29%;
+    margin: 30px 1.5%;
+    vertical-align: top;
+    border: 1px solid black;
+}
+.img-style {
+    width: 70%;
+    text-align: center;
+    margin: 10%;
+    
+}
+h1,h2,h3{
+    text-align: center;
+    
+}
+td{
+    text-align: justify;
+
+
+}
+
