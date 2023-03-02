@@ -1,0 +1,99 @@
+body {
+    background-color: black;
+}
+
+.menu {
+    display: grid;
+    grid-template: "logo    NN micuenta misfavoritos carrito busqueda elementos" 60px 
+                        "imgprin        imgprin       imgprin         imgprin          imgprin         imgprin  imgprin" /
+                        100px 1fr        150px         100px            80px            80px            90px;
+}
+
+.logo {
+    grid-area: logo;
+    background-color: black;
+}
+
+.NN {
+    grid-area: NN;
+    background-color: black;
+}
+
+.micuenta {
+    grid-area: micuenta;
+    background-color: black;
+}
+
+.misfavoritos {
+    grid-area: misfavoritos;
+    background-color: black;
+}
+
+.carrito {
+    grid-area: carrito;
+    background-color: black;
+}
+
+.busqueda {
+    grid-area: busqueda;
+    background-color: black;
+}
+
+.elementos {
+    grid-area: elementos;
+    background-color: black;
+}
+
+.imgprin{
+    grid-area: imgprin;
+    background-color: rgb(44, 2, 44);
+    height: 500px;
+}
+
+.txt-grid{
+    color: white;
+    display: grid;
+    grid-gap: 10px;
+    justify-content: baseline;
+    align-items: center;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.img{
+    width: 100px;
+    height: 65px;
+    right: 10px;
+    
+}
+
+.box4{
+    border: 1px solid white;
+    width: 1285px;
+    height: 300px;
+    margin-top: 15px;
+}
+
+.header1 {
+    display: grid;
+    grid-template: "grande" 500px /
+       1fr 1fr 1fr 1fr ;
+    width: 600%;
+    height:150px;
+    justify-items: baseline;
+}
+
+.txt{
+    color: white;
+}
+
+.datos{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    width: 1290px;
+    height: 500px;
+    margin-top: 5px;
+    display: grid;
+    grid-template: "grande" 500px /
+    1fr 1fr 1fr 1fr ;
+}
