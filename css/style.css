@@ -7,9 +7,9 @@
 }
 
 body {
+    background-color: black;
     overflow-y:visible;
     height: 100%;
-    background-color: black;
 }
 
 #video-fondo {
@@ -76,8 +76,8 @@ nav ul {
     background-color: none;
     border-radius: 5px;
     border: 1px solid blue;
-    text-shadow: 2px 2px 10px rgb(57, 238, 57);
-    box-shadow: 0px 0px 10px rgb(57, 238, 57,0.5);
+    text-shadow: 2px 2px 10px blue;
+    box-shadow: 0px 0px 10px blue;
     cursor: pointer;
     transition: box-shadow 300ms;
 }
@@ -92,9 +92,9 @@ nav>ul>li>ul>li{
 nav>ul>li>ul>li:hover {
     background-color: rgb(184, 175, 224, 0.05);
     border-radius: 5px;
-    border: 1px solid rgb(57, 238, 238);
-    text-shadow: 1px 1px 10px rgb(57, 238, 238);
-    box-shadow: 0px 0px 10px rgb(57, 238, 238,0.5);
+    border: 1px solid blueviolet;
+    text-shadow: 1px 1px 10px blueviolet;
+    box-shadow: 0px 0px 10px blueviolet;
     transition: box-shadow 300ms;
     cursor: pointer;
 }
@@ -240,9 +240,9 @@ nav li:hover > ul >li {
         width: 100%;
         background-color: rgb(184, 175, 224, 0.05);
         border-radius: 5px;
-        border: 1px solid rgb(57, 238, 238);
-        text-shadow: 1px 1px 10px rgb(57, 238, 238);
-        box-shadow: 0px 0px 10px rgb(57, 238, 238,0.5);
+        border: 1px solid green;
+        text-shadow: 1px 1px 10px green;
+        box-shadow: 0px 0px 10px green;
         transition: box-shadow 300ms;
         cursor: pointer;
     }
