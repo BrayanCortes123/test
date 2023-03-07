@@ -9,6 +9,7 @@
 body {
     overflow-y:visible;
     height: 100%;
+    background-color: black;
 }
 
 #video-fondo {
@@ -74,7 +75,7 @@ nav ul {
     line-height: 40px;
     background-color: none;
     border-radius: 5px;
-    border: 1px solid greenyellow;
+    border: 1px solid blue;
     text-shadow: 2px 2px 10px rgb(57, 238, 57);
     box-shadow: 0px 0px 10px rgb(57, 238, 57,0.5);
     cursor: pointer;
