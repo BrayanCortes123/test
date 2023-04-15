@@ -51,3 +51,31 @@ imgMini4.addEventListener("click",function(){
     boxImgBox3.classList.remove("img-mini-act")
 })
 
+
+/*botones de disminucion y aumento*/
+let cantibox = document.getElementById("cantibox");
+let btnmenos = document.getElementById("btnmenos");
+let btncanti = document.getElementById("btncanti");
+let btnmas = document.getElementById("btnmas");
+let num = document.getElementById("num");
+
+
+btnmas.addEventListener("click", function() {
+       let numtxt = document.getElementById("num").innerHTML;
+       let numInt = parseInt(numtxt);
+       let totalEleInt = numInt + 1;
+       let totalEletxt= totalEleInt.toString();
+       num.innerHTML = totalEletxt;
+
+});
+
+btnmenos.addEventListener("click", function() {
+    let numtxt = document.getElementById("num").innerHTML;
+    let numInt = parseInt(numtxt);
+    let totalEleInt = numInt - 1;
+    let totalEletxt= totalEleInt.toString();
+    num.innerHTML = totalEletxt;
+
+});
+
+
