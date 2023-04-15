@@ -1,3 +1,7 @@
+*{
+    font-family: tahoma, sans-serif;
+}
+
 img {
     border-radius: 10px;
     cursor: pointer;
@@ -50,10 +54,40 @@ img {
 .box-img-mini {
     border: 3px solid black;
     border-radius: 15px;
+} 
+
+.cant-box{
+    display: inline-flex;
+    flex-direction: row;
+}
+.icon-op{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-weight: 900;
+    cursor: pointer;
+    border: 2px solid white;
 }
 
-.img-mini-act {
-    opacity: .4;
+.subs-obj{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: rgb(255, 125, 26);
+    font-size: 3em;
 }
 
+.cant-obj{
+    color: black;
+    font-size: 1.6em;
+}
 
+.add-obj{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: rgb(255, 125, 26);
+    font-size: 2em;
+}
