@@ -93,17 +93,16 @@ img {
     font-size: 2em;
 }
 
-.head{
-    box-shadow: 1px, 0px, 1px black;
-    display: grid;
-    grid-template: "empty-der       box-title        empty-cen       empty-center       carrito             boom-img           empty-hiz"30px
-                   "empty-der       box-title        box-info        empty              carrito             boom-img           empty-hiz"40px
-                   "empty-der       box-title        box-info        borde-inferior     borde-inferior      borde-inferior     empty-hiz"3px/
-                    1fr              37vh            100vh           20px               70px                   64px               1fr ; 
-}
-
 .box-info{
     display: flex;
     grid-area: box-info;
     border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+}
+.conted{
+    margin: -190px;
+    margin-left: 40px;
+}
+.buy-box{
+    margin-top: 350px;
+    margin-left: 50px;
 }
