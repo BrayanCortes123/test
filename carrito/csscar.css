@@ -60,6 +60,7 @@ img {
     display: inline-flex;
     flex-direction: row;
 }
+
 .icon-op{
     width: 50px;
     height: 50px;
@@ -90,4 +91,19 @@ img {
     border-bottom-right-radius: 10px;
     color: rgb(255, 125, 26);
     font-size: 2em;
+}
+
+.head{
+    box-shadow: 1px, 0px, 1px black;
+    display: grid;
+    grid-template: "empty-der       box-title        empty-cen       empty-center       carrito             boom-img           empty-hiz"30px
+                   "empty-der       box-title        box-info        empty              carrito             boom-img           empty-hiz"40px
+                   "empty-der       box-title        box-info        borde-inferior     borde-inferior      borde-inferior     empty-hiz"3px/
+                    1fr              37vh            100vh           20px               70px                   64px               1fr ; 
+}
+
+.box-info{
+    display: flex;
+    grid-area: box-info;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.5);
 }
