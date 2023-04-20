@@ -51,7 +51,6 @@ imgMini4.addEventListener("click",function(){
     boxImgBox3.classList.remove("img-mini-act")
 })
 
-
 /*botones de disminucion y aumento*/
 let cantibox = document.getElementById("cantibox");
 let btnmenos = document.getElementById("btnmenos");
@@ -59,23 +58,32 @@ let btncanti = document.getElementById("btncanti");
 let btnmas = document.getElementById("btnmas");
 let num = document.getElementById("num");
 
+btnmenos.addEventListener("click", function(){
+    let numElementosTxt = document.getElementById("num").innerHTML;
+    let numeroEnterosInt = parseInt(numElementosTxt);
+    if (numeroEnterosInt>=1) {
+        let totalElementosInt= numeroEnterosInt - 1;
+        let totalElementosTxt= totalElementosInt.toString();
+        num.innerHTML= totalElementosTxt;
+    }
+    else {
+        num.innerHTML= totalElementosTxt;
+    }
+    
+})
 
-btnmas.addEventListener("click", function() {
-       let numtxt = document.getElementById("num").innerHTML;
-       let numInt = parseInt(numtxt);
-       let totalEleInt = numInt + 1;
-       let totalEletxt= totalEleInt.toString();
-       num.innerHTML = totalEletxt;
-
-});
-
-btnmenos.addEventListener("click", function() {
-    let numtxt = document.getElementById("num").innerHTML;
-    let numInt = parseInt(numtxt);
-    let totalEleInt = numInt - 1;
-    let totalEletxt= totalEleInt.toString();
-    num.innerHTML = totalEletxt;
-
-});
+btnmas.addEventListener("click",function(){
+    let numElementosTxt = document.getElementById("num").innerHTML;
+    let numeroEnterosInt = parseInt(numElementosTxt);
+    if (numeroEnterosInt<=9) {
+        let totalElementosInt= numeroEnterosInt + 1;
+        let totalElementosTxt= totalElementosInt.toString();
+        num.innerHTML= totalElementosTxt;
+    } 
+    else {
+        num.innerHTML= totalElementosTxt;
+    }
+    
+})
 
 
