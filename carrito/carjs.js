@@ -5,7 +5,7 @@ let imgMini3 = document.getElementById("imgMini3");
 let imgMini4 = document.getElementById("imgMini4");
 
 imgMini1.addEventListener("click",function(){
-    imgBox.setAttribute("src","img/image-product-1.jpg")
+    imgBox.setAttribute("src","carrito/img/image-product-1.jpg")
     boxImgBox1.classList.add("box-img-mini")
     boxImgBox2.classList.remove("box-img-mini")
     boxImgBox3.classList.remove("box-img-mini")
@@ -17,7 +17,7 @@ imgMini1.addEventListener("click",function(){
 })
 
 imgMini2.addEventListener("click",function(){
-    imgBox.setAttribute("src","img/image-product-2.jpg")
+    imgBox.setAttribute("src","carrito/img/image-product-2.jpg")
     boxImgBox2.classList.add("box-img-mini")
     boxImgBox1.classList.remove("box-img-mini")
     boxImgBox3.classList.remove("box-img-mini")
@@ -29,7 +29,7 @@ imgMini2.addEventListener("click",function(){
 })
 
 imgMini3.addEventListener("click",function(){
-    imgBox.setAttribute("src","img/image-product-3.jpg")
+    imgBox.setAttribute("src","carrito/img/image-product-3.jpg")
     boxImgBox3.classList.add("box-img-mini")
     boxImgBox1.classList.remove("box-img-mini")
     boxImgBox2.classList.remove("box-img-mini")
@@ -40,7 +40,7 @@ imgMini3.addEventListener("click",function(){
     boxImgBox4.classList.remove("img-mini-act")
 })
 imgMini4.addEventListener("click",function(){
-    imgBox.setAttribute("src","img/image-product-4.jpg")
+    imgBox.setAttribute("src","carrito/img/image-product-4.jpg")
     boxImgBox4.classList.add("box-img-mini")
     boxImgBox1.classList.remove("box-img-mini")
     boxImgBox2.classList.remove("box-img-mini")
@@ -124,7 +124,7 @@ let imgMiniEsc3 = document.getElementById("imgMiniEsc3");
 let imgMiniEsc4 = document.getElementById("imgMiniEsc4");
 
 imgMiniEsc1.addEventListener("click",function(){
-    imgEscPrin.setAttribute("src","img/image-product-1.jpg");
+    imgEscPrin.setAttribute("src","carrito/img/image-product-1.jpg");
     imgEsc1.classList.add("box-img-mini");
     imgEsc2.classList.remove("box-img-mini");
     imgEsc3.classList.remove("box-img-mini");
@@ -136,7 +136,7 @@ imgMiniEsc1.addEventListener("click",function(){
 })
 
 imgMiniEsc2.addEventListener("click",function(){
-    imgEscPrin.setAttribute("src","img/image-product-2.jpg")
+    imgEscPrin.setAttribute("src","carrito/img/image-product-2.jpg")
     imgEsc2.classList.add("box-img-mini")
     imgEsc1.classList.remove("box-img-mini")
     imgEsc3.classList.remove("box-img-mini")
@@ -148,7 +148,7 @@ imgMiniEsc2.addEventListener("click",function(){
 })
 
 imgMiniEsc3.addEventListener("click",function(){
-    imgEscPrin.setAttribute("src","img/image-product-3.jpg")
+    imgEscPrin.setAttribute("src","carrito/img/image-product-3.jpg")
     imgEsc3.classList.add("box-img-mini")
     imgEsc1.classList.remove("box-img-mini")
     imgEsc2.classList.remove("box-img-mini")
@@ -159,7 +159,7 @@ imgMiniEsc3.addEventListener("click",function(){
     imgEsc4.classList.remove("img-mini-act")
 })
 imgMiniEsc4.addEventListener("click",function(){
-    imgEscPrin.setAttribute("src","img/image-product-4.jpg")
+    imgEscPrin.setAttribute("src","carrito/img/image-product-4.jpg")
     imgEsc4.classList.add("box-img-mini")
     imgEsc1.classList.remove("box-img-mini")
     imgEsc2.classList.remove("box-img-mini")
@@ -173,7 +173,7 @@ imgMiniEsc4.addEventListener("click",function(){
 let btnAtras = document.getElementById("btnAtras");
 let btnAdelante = document.getElementById("btnAdelante");
 let counter=0;
-let numImg=["img/image-product-1.jpg","img/image-product-2.jpg","img/image-product-3.jpg","img/image-product-4.jpg"];
+let numImg=["carrito/img/image-product-1.jpg","carrito/img/image-product-2.jpg","carrito/img/image-product-3.jpg","carrito/img/image-product-4.jpg"];
 
 btnAtras.addEventListener("click", function(){
     if (counter>0) {
