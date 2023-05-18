@@ -3,13 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: black;
+}
 
 .main-content{
     display: grid;
     grid-template:"empty-left      main-nav      empty-right"
                     "empty-left    img-toyota    empty-right"
                     "empty-left    iconos        empty-right"/ 
-                    1fr            1190px        1fr;
+                    1fr            1690px        2fr;
+                    
 }
 .empty-left{
     width: 90px;
@@ -20,11 +24,17 @@
     grid-area:empty-right;
     background-color: black;
 }
+
+/* .img-toyota{
+    grid-area: img-toyota;
+    background-color: black;
+} */
+
 .main-nav{
     grid-area: main-nav;
     height: 8vh;
-    width: 1190px;
-    height: 90px;
+    width: 1690px;
+    height: 100px;
     display: flex;
     gap: 25vw;
     background-color: black;
@@ -75,13 +85,13 @@
 }
 .arrow-left{
     display: grid ;
-    bottom: 910%;
-    left: .9%;
+    bottom: 660%;
+    left: .15%;
     place-content: center;
 }
 .arrow-right{
-    left: 93%;
-    bottom: 920%;
+    left: 95.5%;
+    bottom: 668%;
     display: grid;
     place-content: center;
 }
@@ -95,19 +105,20 @@
     display: flex;
     width: 300%;
     margin-left: -100%;
+    margin-top: 10px;
 }
 
 
 .slider-img{
     display: block;
-    width: 1190px;
+    width: 1690px;
     height: 10%;
     object-fit: cover;
     border: 10px;
 }
 
 .slider-section{
-    width: 1190px;
+    width: 1690px;
     height: 6610px;
     background-color: black;
 }
