@@ -55,3 +55,24 @@ console.log("Resultado:" + (num1Float + nume3Float + num5Float));
 let num6int = Math.ceil(num5Float);
 console.log("Coversion de decimal (5.3) a entero con ajuste hacia el techo" + num6int);
 
+console.log("Operadores Aritmeticos");
+
+let numero1 = 8;
+let numero2 = 6;
+
+let resultado1 = (numero1/numero2);
+
+console.log("Suma");
+console.log("8 + 6 =" + (numero1+numero2));
+console.log("Resta");
+console.log("8 - 6 =" + (numero1-numero2));
+console.log("Multiplicacion");
+console.log("8 * 6 =" + (numero1*numero2));
+console.log("Division");
+console.log("8 / 6 =" + (numero1/numero2));
+console.log("Redondear segun el promedio");
+console.log("8 / 6 =" + (Math.round(resultado1)));
+console.log("Redondear segun el promedio hacia arriba");
+console.log("8 / 6 =" + (Math.ceil(resultado1)));
+console.log("Redondear segun el promedio hacia abajo");
+console.log("8 / 6 =" + (Math.floor(resultado1)));
