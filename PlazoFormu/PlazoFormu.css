@@ -1,0 +1,44 @@
+body{
+    display: flex;
+}
+
+.todo{
+    width: 500px;
+    height: 400px;
+    margin-top: 300px;
+    margin-left: 120px;
+
+
+
+}
+/* 
+.epa{
+    width: 50px;
+    height: 20px;
+    margin: 20%;
+    margin-left: 20%;
+    margin-bottom: 30px;
+}
+
+.label{
+    display: flex;
+    margin-bottom: 30px;
+} */
+
+label {
+    display: flexbox;
+    width: 100px;
+    margin-bottom: 20px;
+  }
+
+  #resultado {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  #mensaje {
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+  }
+

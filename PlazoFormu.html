@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PlazoFormu/PlazoFormu.css">
+    <title>PlazoFormu</title>
+</head>
+<body>
+    <h1>Formulario de carga de archivo</h1>
+    <form id="formulario">
+        <div class="todo">
+        <label for="dia">Día:</label>
+        <input type="number" id="dia" name="dia" min="1" max="31" required>
+    
+        <label for="year">Año:</label>
+        <input type="number" id="year" name="year" min="1900" max="2100" required>
+    
+        <label for="hora">Hora:</label>
+        <input type="number" id="hora" name="hora" min="0" max="23" required>
+    
+        <label for="minutos">Minutos:</label>
+        <input type="number" id="minutos" name="minutos" min="0" max="59" required>
+    
+        <label for="archivo">Archivo:</label>
+        <input type="file" id="archivo" name="archivo" required>
+    
+        <input type="submit" value="Cargar archivo">
+
+        <div id="resultado"></div>
+        <div id="mensaje"></div>
+        
+    </div>
+      </form>
+
+
+    <script src="PlazoFormu/PlazoFormu.js"></script>
+</body>
+</html>
