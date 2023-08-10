@@ -1,28 +1,23 @@
 .box1{
 position: static;
 background-color: goldenrod;
-
 }
 .box2{
 position: static;
 background-color: rgb(38, 241, 157);  
 }
-
 .box3{
 position: static;
 background-color: rgb(219, 77, 207); 
 }
-
 .box4{
 position: static;
 background-color: rgb(72, 54, 233);
 }
-
 h1{
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 .box1fx, .box2fx, .box3fx, .box4fx{
     width: 250px;
     height: 250px;
@@ -35,7 +30,6 @@ h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
-
 .box1fx{
     position: fixed;
     background-color: rgb(63, 212, 238);
@@ -59,7 +53,6 @@ h1{
     right:0 ;
 bottom: 500px;
 }
-
 .box1abs, .box2abs, .box3abs, .box4abs{
     width: 250px;
     height: 250px;
@@ -70,9 +63,6 @@ bottom: 500px;
     justify-content: center;
     align-items: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-
-
 }
 .box2abs{
 position: absolute;
@@ -84,11 +74,9 @@ height: 80px;
 color: white;
 background-color: rgb(48,48,48,.9)
 }
-
 .main-menu{
 width: 100%;
 text-align: right;
-
 }
 .menu{
 padding: 15px 30px;

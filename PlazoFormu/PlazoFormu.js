@@ -21,7 +21,7 @@ document.getElementById('formulario').addEventListener('submit', function(event)
       let horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       let minutosRestantes = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
 
-      document.getElementById('resultado').innerText = 'Tiempo restante: ' + dias + ' días, ' + horas + ' horas y ' + minutosRestantes + ' minutos.';
+      document.getElementById('resultado').innerText = 'Tiempo restante: ' + dias + ' dias, ' + horas + ' horas y ' + minutosRestantes + ' minutos.';
       document.getElementById('mensaje').innerText = '';
     }
   });
