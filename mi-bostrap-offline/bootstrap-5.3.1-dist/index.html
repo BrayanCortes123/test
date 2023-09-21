@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Forms</title>
+</head>
+<body>
+      <!-- formulario 1 -->
+    <h1 class="text-center">Formulario basico</h1>
+    <div class="container g-col-4 g-start-12" >
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <!-- formulario 2 -->
+        <h2>formulario select</h2>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>seleccione un municipio</option>
+            <option value="1">pitalito</option>
+            <option value="2">sanagustin</option>
+            <option value="3">isnos</option>
+          </select>
+    <!-- formulario 3 checked con ese comando el usuario puede selecionar varias a la misma vez si el solo puede selecionar una sola-->
+          <h2>Formulario de dar clic en un punto</h2>
+          <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+   papa
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+  <label class="form-check-label" for="flexCheckChecked">
+    cebolla
+  </label>
+</div>
+
+<div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault">
+     cilantro
+    </label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+    <label class="form-check-label" for="flexCheckChecked">
+     tomate
+    </label>
+  </div>
+<h2>Formulario </h2>
+<!-- este es para poder activar algo  -->
+<div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+    <label class="form-check-label" for="flexSwitchCheckDefault">Entrada de casilla de verificación de interruptor predeterminada</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+    <label class="form-check-label" for="flexSwitchCheckChecked">Entrada de casilla de verificación de interruptor marcada</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled" disabled>
+    <label class="form-check-label" for="flexSwitchCheckDisabled">Entrada de casilla de verificación de interruptor deshabilitado</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked disabled>
+    <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Entrada de casilla de verificación de interruptor marcada deshabilitada</label>
+  </div>
+      </div>
+    </div>
+      <!-- formulario 4 -->
+    <h1 class="text-center">Formulario basico 2</h1>
+<div class="container">
+
+
+    <div class="mb-3">
+        <label for="formFile" class="form-label">Ejemplo de entrada de archivo predeterminado</label>
+        <input class="form-control" type="file" id="formFile">
+      </div>
+      <div class="mb-3">
+        <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+        <input class="form-control" type="file" id="formFileMultiple" multiple>
+      </div>
+      <div class="mb-3">
+        <label for="formFileDisabled" class="form-label">Ejemplo de entrada de archivos deshabilitados</label>
+        <input class="form-control" type="file" id="formFileDisabled" disabled>
+      </div>
+      <div class="mb-3">
+        <label for="formFileSm" class="form-label">Ejemplo de entrada de archivo pequeño</label>
+        <input class="form-control form-control-sm" id="formFileSm" type="file">
+      </div>
+      <div>
+        <label for="formFileLg" class="form-label">Ejemplo de entrada de archivos grandes</label>
+        <input class="form-control form-control-lg" id="formFileLg" type="file">
+      </div>
+</div>
+<h2 class="text-center">Formulario basico 3</h2>
+<div class="container">
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="nombres">
+        <label for="floatingInput">nombre (s)</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingPassword" placeholder="nombres" aria-label="apellidos">
+        <label for="floatingPassword">apellido (s)</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingPassword" placeholder="email">
+        <label for="floatingPassword">correo electronico</label>
+      </div>
+      <div class="form-floating mb-3 ">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+      <br><br>
+      <h2>Formulario 4</h2>
+      <div class="container">
+        <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+          </div>
+           <br><br><br><br>
+
+          <h2>Validacion de formulario </h2>
+           <div class="container">
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">Nombre de pila</label>
+                <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                <div class="valid-feedback">
+                  ¡Se ve bien!
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                <div class="valid-feedback">
+                  ¡Se ve bien!
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Email</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Por favor, elija un nombre de usuario.
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                  Proporcione una ciudad válida.
+                </div>
+              </div>
+              <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">Estado</label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">Elegir...</option>
+                  <option>Pitalito</option>
+                  <option>Neiva</option>
+                  <option>Garzon</option>
+                </select>
+                <div class="invalid-feedback">
+                  Seleccione un estado válido.
+                </div>
+              </div>
+              <div class="col-md-3">
+                <label for="validationCustom05" class="form-label">Codigo Postal</label>
+                <input type="text" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                  Proporcione un código postal válido.
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Aceptar términos y condiciones
+                  </label>
+                  <div class="invalid-feedback">
+                    Debes aceptar antes de enviar.
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">Enviar formulario</button>
+              </div>
+            </form>
+           </div>
+           <br><br><br>
+
+           <h2>Validacion de formulario 2</h2>
+           <form class="row g-3">
+            <div class="col-md-4">
+              <label for="validationDefault01" class="form-label">Nombres</label>
+              <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationDefault02" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationDefaultUsername" class="form-label">Email</label>
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationDefault03" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="validationDefault03" required>
+            </div>
+            <div class="col-md-3">
+              <label for="validationDefault04" class="form-label">Estado</label>
+              <select class="form-select" id="validationDefault04" required>
+                <option selected disabled value="">Elegir...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="validationDefault05" class="form-label">Codigo Postal</label>
+              <input type="text" class="form-control" id="validationDefault05" required>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                  Aceptar términos y condiciones
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Enviar Formulario</button>
+            </div>
+          </form>
+          <br><br><br>
+
+          <h2>sdghdfgd</h2>
+      </div>
+</div>
+<script src="js/validar-form.js"></script>
+</body>
+</html>
