@@ -4,103 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homecenter</title>
-    <link rel="stylesheet" href="Homecenter/homecentercss.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="Homecenter/css/homecenter.css">
+    <link rel="stylesheet" href="Homecenter/icons/all.css">
+    <link rel="icon" href="Homecenter/img/">
+    <iconify-icon icon="uil:shopping-cart"></iconify-icon>
 </head>
+
 <body>
-<!--     <nav class="nav">
-        Venta Telefónica 01 8000 12 7373
-
-        |
-        Servicio al cliente 320 88 999 33
-        
-        |
-        Tiendas
-        
-        |
-        Precios bajos siempre
-        
-        |
-        Mundo CMR
-        
-        CONSTRUCTOR
-        
-        |
-        FALABELLA
-        
-        |
-        BANCO
-        
-        |
-        SEGUROS
-        
-        |
-        SEGUIMIENTO DE COMPRA
-    </nav> -->
     <div class="principal">
-    <div class="barra">
-<div class="box burger"><i class="uil uil-bars"></i></i></div>
-        <div class="box logo">
-            <a href="Homecenter.html"><img class="logo-hc" src="Homecenter/img/Artboard_1.png">
-            <img class="logo-hc-mini" src="Homecenter/img/unnamed-removebg-preview.png" alt=""></a>
-    </div>
-<div class="seeker">
-        <div class="busca"><input type="text" placeholder="¿Qué estás buscando?"></div>
-                <div id="Search"  class="lupa"><i class="uil uil-search"></i></div>
-                <div id="Salida" class="s-salida"><i class="uil uil-multiply"></i></div>
+        <div class="barra">
+            <div class="box burger"><i class="fa-solid fa-bars"></i></div>
+            <div class="box logo"><a href="index.html"><img class="logo-hc" src="Homecenter/img/hc.png"><img class="logo-hc-mini"
+                        src="Homecenter/img/hclogomini.png" alt=""></a></div>
+            <div class="seeker">
+                <div class="busca"><input type="text" placeholder="¿Qué estás buscando?"></div>
+                <div id="lupaCel" class="lupa"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div id="xSalida" class="x-salida"><i class="fa-solid fa-x"></i></div>
+            </div>
+            <div class="box ubicacion">
+                <p class="location"><i class="fa-solid fa-location-dot"></i></p>&nbsp;<p class="para">Estás comprando
+                    para<br><span class="city">Pitalito</span></p>
+            </div>
+            <div class="box shop">
+                <div class="compra">0</div>
+                <p class="cart"><i class="uil uil-shopping-cart"></i></p>
+            </div>
+            <div class="box cmr"><img src="Homecenter/img/cmr.png" width="28">&nbsp;<p class="para2">Programa<br><span
+                        class="puntos">CMR Puntos</span></p>
+            </div>
+            <div class="box userlogo"><i class="fa-regular fa-user"></i>&nbsp;<p class="user">Mi cuenta</p>
+            </div>
         </div>
-
-<div class="box ubicacion"><p class="location"><i class="uil uil-map-marker-alt"></i></p>&nbsp;
-    <p class="para">Estás comprando para<br><span class="city">Pitalito</span></p></div>
-
-        <div class="box shop" ><div class="compra">0</div>
-        <p class="cart"><i class="uil uil-shopping-cart"></i></p></div>
-            <div class="box cmr"><img src="Homecenter/img/cmr.png" width="28">&nbsp;<p class="para2">Programa<br>
-                <span class="puntos">CMR Puntos</span></p>
-        </div>
-            <div class="box userlogo"><i class="uil uil-user"></i>&nbsp;<p class="user">Mi cuenta</p></div>
-        </div>
-<div id="seekerCellID" class="seeker-cell">
-        <div id="Search" class="lupa2"><i class="uil uil-search"></i></div>
+        <div id="seekerCellID" class="seeker-cell">
+            <div id="lupaCel" class="lupa2"><i class="fa-solid fa-magnifying-glass"></i></div>
             <div class="seekerMini"><input type="text" placeholder="¿Qué estás buscando?"></div>
-            <div id="Salid" class="s-salid"><i class="uil uil-multiply"></i></div>
+            <div id="xSalid" class="x-salid"><i class="fa-solid fa-x"></i></div>
+        </div>
+        <div id="ayudaBox" class="ayuda">
+            <div id="mensajeAyuda" class="mensaje-ayuda">¿Cómo podemos ayudarte?</div>
+            <div id="ana" class="asistente">
+                <div id="xCircle" class="x-circle"><i class="fa-solid fa-x"></i></div>
+                <div id="mujerYAna" class="mujer-y-ana"><img class="mujer-asis-img" src="Homecenter/img/mujerasistente.png"
+                        alt="">&nbsp;Ana</div>
+            </div>
+        </div>
+        <div id="chatBox" class="chat-hidden">
+            <div class="chat-header">
+                <div class="she-img"><img class="mujer-asis-img" src="Homecenter/img/mujerasistente2.png" alt=""></div>
+                <div class="chat-letter-header">
+                    <p class="home-let">Homecenter</p>
+                </div>
+            </div>
+            <div class="chat-middle">
+                <div class="photo">
+
+                </div>
+                <div class="parra">
+<!--                     <div class="welcome">¡Hola! Soy Ana 🙋🏻‍♀, tu asistente virtual y estoy aquí para ayudarte. 😀
+                    </div> -->
+                    <div class="ana-text-img-container"><img class="ana-text-img" src="Homecenter/img/mujerasistente2.png"
+                            alt=""></div>
+                    <div class="ask">Dime, ¿qué quieres hacer?
+                        Selecciona una opción 👇
+                        <br><br>
+                        <b>Para ver mas opciones desliza a la derecha ➡️</b>
+                    </div>
+                    <div class="all-slider">
+                        <div id="leftArrow" class="circulo-izq"><!-- <i class="fa-solid fa-chevron-left"></i> --></div>
+                        <div id="rightArrow" class="circulo-der"><!-- <i class="fa-solid fa-chevron-right"> --></i></div>
+                        <div class="div-main-slider">
+
+                            <div id="sliderMoving" class="containt-slider">
+                                <div class="slider slide1">
+                                    <div class="slider-text">
+                                        <p><b>Compra con un experto</b><br><span>🛒🛍️ Compra aquí tus productos o
+                                                servicios
+                                                y alquila tus herramientas con un experto</span></p>
+                                    </div>
+                                    <div class="click-here">Click aquí</div>
+                                </div>
+                                <div class="slider slide2">
+                                    <div class="slider-text">
+                                        <p><b>Rastrea tu pedido</b><br><span>Rastrea tus pedidos de Homecenter</span>
+                                        </p>
+                                    </div>
+                                    <div class="click-here">Click aquí</div>
+                                </div>
+                                <div class="slider slide3">
+                                    <div class="slider-text">
+                                        <p><b>Agenda tu Instalación</b><br><span>Agenda tu servicio de instalación o
+                                                armado</span></p>
+                                    </div>
+                                    <div class="click-here">Click aquí</div>
+                                </div>
+                                <div class="slider slide4">
+                                    <div class="slider-text">
+                                        <p><b>Ayuda y mas opciones</b><br><span>Ana puede ayudarte con otras
+                                                solicitudes</span></p>
+                                    </div>
+                                    <div class="click-here">Click aquí</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dots">
+                            <div id="dot" class="mini-dot dot1"><i class="fa-solid fa-circle"></i></div>
+                            <div id="dot" class="mini-dot dot2"><i class="fa-solid fa-circle"></i></div>
+                            <div id="dot" class="mini-dot dot3"><i class="fa-solid fa-circle"></i></div>
+                            <div id="dot" class="mini-dot dot4"><i class="fa-solid fa-circle"></i></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="arrow"></div>
+            </div>
+            <div class="chat-box">
+                <div class="chat-text"><input type="text" placeholder="Escribe aquí..."></div>
+                <div class="chat-emoji"><i class="fa-regular fa-face-smile-beam"></i></div>
+            </div>
         </div>
     </div>
-    <div id="chatContainer">
-        <div id="chatHeader">
-            <img src="Homecenter/img/ana - copia.jpg.jpg" width="50px" alt="">
-            <div class="home"><h2>Homecenter</h2></div>
-            <button id="closeChat"><span>&times;</span></button>
-        </div>
-        <div id="chatContent">
-            <div class="message user-message">¡Hola! Soy Ana 🙋🏻‍♀, tu asistente virtual y estoy aquí para ayudarte. 😀</div>
-            <img src="Homecenter/img/ana.jpg" width="150px" alt="">
-            <div class="message assistant-message">Dime, ¿qué quieres hacer?Selecciona una opción 👇<br><br>
-                <div><b>Para ver mas opciones desliza a la derecha ➡️</b></div></div>
-        </div>
-        <div class="slider">
-            <div class="slide active">
-              <p>Compra con un experto</p><br>
-              <p>🛒🛍️Compra aquí tus productos o servicios y alquila tus herramientas con un experto</p><br>
-            </div>
-            <div class="slide">
-              <p>Este es el segundo slide</p>
-            </div>
-            <div class="slide">
-              <p>Este es el tercer slide</p>
-            </div>
-            <div class="slide">
-              <p>Este es el cuarto slide</p>
-            </div>
-            <div class="prev">&#10094;</div>
-            <div class="next">&#10095;</div>
-           </div>
-        <div class="form-input" id="chatInput">
-            <input type="text" id="messageInput" placeholder="Escribe un mensaje...">
-            <button id="sendMessage">Enviar</button>
-        </div>
-    </div>
-    <button class="x" id="openChat">Abrir Asistente</button>
 </body>
-<script src="Homecenter/homecenterjs.js"></script>
+<script src="Homecenter/js/homecenter.js"></script>
+
 </html>
