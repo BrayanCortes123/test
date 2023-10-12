@@ -1,35 +1,51 @@
 class Automovil {
-    constructor(marca, modelo, precio, anyo, ciudad, Kilometros) {
-      this.marca = marca;
-      this.modelo = modelo;
-      this.precio = precio;
-      this.anyo = anyo;
-      this.ciudad = ciudad;
-      this.Kilometros = Kilometros;
-    }
+  constructor(marca, modelo, precio, anyo, ciudad, Kilometros) {
+    this.marca = marca;
+    this.modelo = modelo;
+    this.precio = precio;
+    this.anyo = anyo;
+    this.ciudad = ciudad;
+    this.Kilometros = Kilometros;
   }
-  
-  let auto1 = new Automovil("Toyota", "Prado", 350000000, 2015, "Garzon - Huila", 1000);
-  let auto2 = new Automovil("Ford", "Mustang", 202000000, 2020, "Neiva - Huila", 16600);
-  let auto3 = new Automovil("Chevrolet", "Camaro", 158000000, 2016, "Pitalito - Huila", 27600);
-  
-  let autos = [auto1, auto2, auto3];
-  
-  let inputBusqueda = document.getElementById("busqueda");
-  
-  inputBusqueda.addEventListener("keydown", function (event) {
-    if (event.key === "Enter") {
+}
+
+let auto1 = new Automovil("Toyota", "Prado", 350000000, 2015, "Garzon - Huila", 1000);
+let auto2 = new Automovil("Ford", "Mustang", 202000000, 2020, "Neiva - Huila", 16600);
+let auto3 = new Automovil("Chevrolet", "Camaro", 158000000, 2016, "Pitalito - Huila", 27600);
+
+let autos = [auto1, auto2, auto3];
+
+let inputBusqueda = document.getElementById("busqueda");
+
+inputBusqueda.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    document.body.style.backgroundImage = "none";
+        document.body.style.backgroundColor = "white";
       let mainContent = document.getElementById("mainContent");
       mainContent.innerHTML = "";
       let busqueda = inputBusqueda.value;
       for (let i = 0; i < autos.length; i++) {
-        let auto = autos[i];
-        if (auto.marca.toLowerCase().startsWith(busqueda.toLowerCase())) {
-          let boxAuto = document.createElement("div");
-          mainContent.appendChild(boxAuto);
-          boxAuto.setAttribute("class", "box-auto");
-  
-          let boxImg = document.createElement("div");
+          let auto = autos[i];
+          if (auto.marca.toLowerCase().startsWith(busqueda.toLowerCase())) {
+              let boxAuto = document.createElement("div");
+              mainContent.appendChild(boxAuto);
+              boxAuto.setAttribute("class", "box-auto");
+
+              let boxImg = document.createElement("div");
+              boxAuto.appendChild(boxImg);
+              boxImg.setAttribute("class", "box-img");
+
+              let imgAuto = document.createElement("img");
+              imgAuto.setAttribute("class", "img-auto");
+              boxImg.appendChild(imgAuto);
+
+              if (auto.marca === "Toyota") {
+                  imgAuto.setAttribute("src", "MercadoLibre/img/toyota.png");
+              } else if (auto.marca === "Ford") {
+                  imgAuto.setAttribute("src", "MercadoLibre/img/mustang.png");
+              } else if (auto.marca === "Chevrolet") {
+                  imgAuto.setAttribute("src", "MercadoLibre/img/camaro.png");
+              }
   
           let boxCorazon = document.createElement("div");
           boxImg.appendChild(boxCorazon);
@@ -43,8 +59,7 @@ class Automovil {
           corazon.appendChild(iconHearth);
           iconHearth.setAttribute("class", "icon-style-hearth fa-regular fa-heart");
   
-          // Agregar un evento clic para llenar o vaciar el corazón
-          let isLiked = false; // Variable para controlar si se ha hecho clic en el corazón
+          let isLiked = false; 
           corazon.addEventListener("click", function () {
             if (isLiked) {
               iconHearth.classList.remove("clicked");
@@ -54,15 +69,6 @@ class Automovil {
               isLiked = true;
             }
           });
-  
-          boxAuto.appendChild(boxImg);
-          let imgAuto = document.createElement("img");
-          boxImg.appendChild(imgAuto);
-          boxImg.setAttribute("class", "box-img");
-          imgAuto.setAttribute("src", "MercadoLibre/img/toyota.png");
-          imgAuto.setAttribute("src", "MercadoLibre/img/mustang.png");
-          imgAuto.setAttribute("src", "MercadoLibre/img/camaro.png");
-          imgAuto.setAttribute("class", "img-auto");
   
           let boxInfo = document.createElement("div");
           boxAuto.appendChild(boxInfo);
