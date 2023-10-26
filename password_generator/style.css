@@ -1,0 +1,304 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111016;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #CAC9D0;
+    background-color: #24232B;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #43414C;
+    font-size: 1em;
+    margin: 40px;
+}
+
+.textst {
+    position: absolute;
+    top: 405px;
+    left: 500px;
+    font-size: 0.8em;
+    color: #807E8A;
+}
+
+.textstt {
+    position: absolute;
+    top: 388px;
+    left: 715px;
+}
+
+.result {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#password {
+    width: 370%;
+    height: 25px;
+    margin: -5px 0;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 468px;
+    color: #CAC9D0;
+    background-color: #24232B;
+    border: none;
+}
+
+button {
+    background-color: #24232B;
+    color: #A4FFAF;
+    border: 2px solid #A4FFAF; 
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 350px;
+    height: 50px;
+    font-size: 0.9em;
+}
+
+
+button:hover {
+    background-color:#A4FFAF;
+    color: #242424;
+}
+
+.options {
+    text-align: left;
+    color: #E9E8EE;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+.password-strength {
+    display: flex;
+    justify-content: center;
+}
+
+.password-strength-bar {
+    width: 4px;
+    margin: 0 4px;
+}
+
+.low-strength {
+    background-color: red;
+}
+
+.medium-strength {
+    background-color: orange;
+}
+
+.high-strength {
+    background-color: green;
+}
+
+.estado{
+    width: 100%;
+}
+
+.password-strength-bars {
+    display: flex;
+    justify-content: right;
+    background-color: #111016;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.strength-bar {
+    width: 6px;
+    height: 20px;
+    margin: 0 3px;
+    border: 1px solid lightgray;
+    display: inline-block;
+}
+
+.password-input-container {
+    position: relative;
+    width: 100px;
+}
+
+.password-input-container input {
+    padding-right: 30px;
+}
+
+.copy-password-icon {
+    position: absolute;
+    top: 0;
+    right: -755px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    cursor: pointer;
+    color: blue;
+}
+
+.copy-password-icon:hover {
+    color: darkblue;
+}
+
+.custom-icon {
+    color: #B0F9BB;
+}
+
+.boton{
+    text-align: center;
+}
+
+:root {
+    --checkbox-bg-color: #242424;
+    --checkbox-check-color: #242424;
+    --checkbox-bg-color-checked: #9EFFA7;
+    --checkbox-check-color-checked: #242424;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: var(--checkbox-bg-color);
+    border: 2px solid #A4FFAF;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="checkbox"]::before {
+    content: '✔';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--checkbox-check-color);
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--checkbox-bg-color-checked);
+}
+
+input[type="checkbox"]:checked::before {
+    color: var(--checkbox-check-color-checked);
+}
+
+input[type="checkbox"]:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.texto {
+    position: absolute;
+    font-weight: bold;
+    font-size: 16px;
+    color: lightgray;
+    margin-top: 3px;
+    margin-left: 15px;
+}
+
+.password-label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.password-range {
+    width: 90%; /* Ancho del control deslizante */
+    height: 5px; /* Altura del control deslizante (haciéndolo circular) */
+    margin: 0 auto;
+    margin-left: 23px;
+    -webkit-appearance: none;
+    background-color: #111016;
+}
+
+.password-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px; /* Ancho del control deslizante */
+    height: 20px; /* Altura del control deslizante (haciéndolo circular) */
+    border-radius: 50%; /* Hace que el control deslizante sea circular */
+    background: #111016; /* Color de fondo del círculo deslizante */
+    border: 2px solid #9EFFA7; /* Color del borde del círculo deslizante */
+    cursor: pointer;
+}
+
+.length-value {
+    font-size: 20px;
+    font-weight: bold;
+    color:#9EFFA7;
+    margin-right: 30px;
+}
+
+.number {
+    margin-left: 325px;
+    margin-top: -22px;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+        margin: 20px;
+    }
+    
+    .textst {
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .textstt {
+        position: static;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    #password {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    button {
+        width: 100%;
+    }
+    
+    .options {
+        text-align: center;
+    }
+    
+    .password-strength {
+        justify-content: flex-start;
+    }
+    
+    .password-strength-bar {
+        margin: 0 2px;
+    }
+    
+    .password-input-container {
+        width: 100%;
+    }
+    
+    .copy-password-icon {
+        right: 0;
+    }
+    
+    .number {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
