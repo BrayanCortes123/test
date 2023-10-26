@@ -1,25 +1,54 @@
+/* Estilos CSS para alta velocidad y estilos existentes */
+
+/* Configuración de transiciones más rápidas */
 * {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin:0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
     padding: 0;
     font-size: 18px;
-
+    transition-duration: 0.1s; /* Todas las transiciones toman 0.1 segundos */
+    transition-timing-function: linear; /* Cambio uniforme durante la transición */
 }
 
 body {
     background-color: black;
-    overflow-y:visible;
+    overflow-y: visible;
     height: 100%;
 }
 
-.menu{
+.menu {
     width: 100%;
     position: fixed;
     height: 60px;
     color: white;
 }
 
-.bar-menu{
+/* Efectos de resaltado al pasar el cursor */
+.item-main-menu:hover {
+    background-color: none;
+    border-radius: 5px;
+    border: 1px solid blue;
+    text-shadow: 2px 2px 10px blue;
+    box-shadow: 0px 0px 10px blue;
+}
+
+/* Efectos de destello en menús desplegables */
+nav li li:hover {
+    background-color: rgba(184, 175, 224, 0.05);
+    border-radius: 5px;
+    border: 1px solid blueviolet;
+    text-shadow: 1px 1px 10px blueviolet;
+    box-shadow: 0px 0px 10px blueviolet;
+}
+
+/* Efecto de destello al pasar el cursor sobre el nombre */
+.nombrepri:hover {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+/* Estilos CSS existentes */
+
+.bar-menu {
     color: white;
     text-align: right;
     position: fixed;
@@ -41,7 +70,7 @@ nav {
 }
 
 nav ul {
-    list-style: none; 
+    list-style: none;
     padding: 0;
     display: table;
     position: absolute;
@@ -50,6 +79,9 @@ nav ul {
     justify-content: center;
     margin: 0;
 }
+
+/* Continuar con tus estilos existentes... */
+
 
 .item-main-menu{
     float: left;
