@@ -213,8 +213,8 @@ input[type="checkbox"]:focus {
 }
 
 .password-range {
-    width: 90%; /* Ancho del control deslizante */
-    height: 5px; /* Altura del control deslizante (haciéndolo circular) */
+    width: 90%;
+    height: 5px;
     margin: 0 auto;
     margin-left: 23px;
     -webkit-appearance: none;
@@ -223,11 +223,11 @@ input[type="checkbox"]:focus {
 
 .password-range::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 20px; /* Ancho del control deslizante */
-    height: 20px; /* Altura del control deslizante (haciéndolo circular) */
-    border-radius: 50%; /* Hace que el control deslizante sea circular */
-    background: #111016; /* Color de fondo del círculo deslizante */
-    border: 2px solid #9EFFA7; /* Color del borde del círculo deslizante */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #111016;
+    border: 2px solid #9EFFA7; 
     cursor: pointer;
 }
 

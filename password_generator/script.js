@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Obtención de referencias a elementos
     const passwordEl = document.getElementById('password');
     const passwordStrengthEl = document.getElementById('password-strength');
     const generateBtn = document.getElementById('generate');
@@ -20,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
         lengthValueEl.textContent = length;
     });
 
-    // Añade este código para inicializar el valor en la página
     lengthValueEl.textContent = lengthEl.value;
 
     generateBtn.addEventListener('click', function () {
@@ -80,7 +78,6 @@ document.addEventListener('DOMContentLoaded', function () {
         };
         passwordStrengthEl.textContent = '' + strengthLabels[strength];
 
-        // Cambia los colores de las barras de fortaleza
         const strengthBars = document.querySelectorAll('.strength-bar');
         strengthBars.forEach(bar => bar.style.backgroundColor = 'lightgray');
 
