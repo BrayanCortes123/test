@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main-img{
+    position: fixed;
+    top: 0;
+    width: 500000000000000px;
+    height: 100%;
+    background-position: center bottom;
+    background-size: contain;
+    background-image: url(./img/fondo.png);
+    z-index: 10;
+}
+
+
+.main-img-0{
+    left: 0;
+}
+
+.main-img-1{
+    left: -90000px;
+    transition: all 240s;
+}
+
+.styles-gif{
+    width: 300px;
+    height: 30vh;
+    position: absolute;
+    bottom: 50px;
+    z-index: 50;
+}
+
+.style-gif{
+    width: 300px;
+    height: 30vh;
+    position: absolute;
+    bottom: 50px;
+    z-index: 50;
+}
+
+.main-bicy-up-0{
+    bottom: 0px;
+    transition: all 1s;
+}
+
+.main-bicy-up-1{
+    bottom: 30px;
+    transition: all 1s;
+}
+
+.imagena{
+    position: relative;
+    top: 780px;
+}
+
+.imagenb{
+        position: relative;
+    top: 850px;
+}
+
+.obstacle { 
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-image: url('./img/roca.png');
+    background-size: cover;
+    top: 800px;
+    border-radius: 50%;
+    animation: roll 2s linear infinite;
+}
+
+@keyframes roll {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+
+
+
