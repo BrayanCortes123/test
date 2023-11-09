@@ -71,7 +71,6 @@
     top: 800px;
     border-radius: 50%;
     animation: roll 2s linear infinite;
-    background-color: red;
 }
 
 .obstacleTwo { 
@@ -83,7 +82,6 @@
     top: 700px;
     border-radius: 50%;
     animation: roll 2s linear infinite;
-    background-color: red;
 }
 
 
