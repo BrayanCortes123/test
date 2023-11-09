@@ -27,7 +27,7 @@ function checkCollision(obstacle, bicy) {
         bicyRect.x + bicyRect.width > obstacleRect.x &&
         bicyRect.y < obstacleRect.y + obstacleRect.height &&
         bicyRect.y + bicyRect.height > obstacleRect.y) {
-      /*   alert("Game Over"); */
+        alert("Game Over");
     }
 }
 
