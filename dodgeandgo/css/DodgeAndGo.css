@@ -10,7 +10,7 @@
     height: 100%;
     background-position: center bottom;
     background-size: contain;
-    background-image: url(./img/fondo.png);
+    background-image: url(../img/fondo2.jpg);
     z-index: 10;
 }
 
@@ -30,6 +30,7 @@
     position: absolute;
     bottom: 50px;
     z-index: 50;
+    border-radius: 50%;
 }
 
 .style-gif{
@@ -38,6 +39,7 @@
     position: absolute;
     bottom: 50px;
     z-index: 50;
+    border-radius: 50%;
 }
 
 .main-bicy-up-0{
@@ -64,12 +66,24 @@
     position: absolute;
     width: 70px;
     height: 70px;
-    background-image: url('./img/roca.png');
+    background-image: url('../img/roca.png');
     background-size: cover;
     top: 800px;
     border-radius: 50%;
     animation: roll 2s linear infinite;
 }
+
+.obstacleTwo { 
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-image: url('../img/roca.png');
+    background-size: cover;
+    top: 700px;
+    border-radius: 50%;
+    animation: roll 2s linear infinite;
+}
+
 
 @keyframes roll {
     0% { transform: rotate(360deg); }
