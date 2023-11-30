@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.road {
+    width: 50%;
+    height: 100vh;
+    background-image: url(../img/carretera.jpg);
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    position: absolute;
+    animation: road 3s infinite linear;
+}
+
+@keyframes road {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 300%; 
+    }
+}
+
+
+.car{
+    width: 65px;
+    height: 150px;
+    position: absolute;
+    background-image: url(../img/car.png);
+    background-size: contain;
+    position: absolute;
+}
